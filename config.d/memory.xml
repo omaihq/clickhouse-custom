@@ -1,0 +1,9 @@
+<yandex>
+  <!-- Limit ClickHouse to use up to 3.2GB (80% of 4GB, allows for OS and container overhead) -->
+  <max_server_memory_usage>3200000000</max_server_memory_usage>
+  <max_server_memory_usage_to_ram_ratio>0</max_server_memory_usage_to_ram_ratio>
+  
+  <!-- Reduce cache sizes for lower memory -->
+  <mark_cache_size>268435456</mark_cache_size>         <!-- 256MB -->
+  <uncompressed_cache_size>134217728</uncompressed_cache_size> <!-- 128MB -->
+</yandex>
